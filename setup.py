@@ -9,7 +9,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
   name = 'muCART',
   packages = ['muCART'],
-  version = 'v1.0.1', 
+  version = 'v1.0.2', 
   license='MIT',
   description = 'Measure Inducing Classification and Regression Trees',
   long_description=long_description,
