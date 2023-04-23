@@ -32,12 +32,15 @@ X = [X]
 train_index = [i for i in range(100)]
 test_index = [i for i in range(100, len(X))]
 
+min_samples_leaf_list = [i for i in range(1,5)]
 lambda_list = np.logspace(-5, 5, 10, base = 2)
 solver_options = {'solver':'ipopt',
                   'max_iter':500}
 
 estimator = muCARTClassifier(solver_options)
-parameters = {'lambda':lambda_list}
+parameters = {'min_samples_leaf':min_samples_leaf_list,
+              'lambda':lambda_list,
+              'max_depth': [None]}
 cv = StratifiedKFold(n_splits = 2,
                      random_state = 46,
                      shuffle = True)
