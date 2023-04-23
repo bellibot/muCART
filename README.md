@@ -2,7 +2,7 @@
 
 `muCART` is a Python package that implements Measure Inducing Classification and Regression Trees for Functional Data.
 
-The estimators are implemented with the familiar `fit`/`predict`/`score` interface, and also support multiple predictors of possibly different lengths (as a List of np.ndarray objects, one for each predictor). The following tasks are supported, based on loss function inside each node of the tree:
+The estimators are implemented with the familiar `fit`/`predict`/`score` interface, and also support multiple predictors of possibly different lengths (as a List of np.ndarray objects, one for each predictor). The following tasks are supported, based on the loss function inside each node of the tree:
 
 - Regression (mse, mae)
 - Binary and Multiclass Classification (gini, misclassification error, entropy)
