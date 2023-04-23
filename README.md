@@ -27,10 +27,10 @@ from sklearn.datasets import load_wine
 from sklearn.metrics import balanced_accuracy_score
 
 X, Y = load_wine(return_X_y = True)
-# wrap the single predictor in a List
-X = [X]
 train_index = [i for i in range(100)]
 test_index = [i for i in range(100, len(X))]
+# wrap the single predictor in a List
+X = [X]
 
 min_samples_leaf_list = [i for i in range(1,5)]
 lambda_list = np.logspace(-5, 5, 10, base = 2)
